@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Ubuntu Light';
+    src: url(../fonts/Ubuntu-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Ubuntu Regular';
+    src: url(../fonts/Ubuntu-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Ubuntu Bold';
+    src: url(../fonts/Ubuntu-Bold.ttf);
+}
+
+:root {
+    /* Colors */
+    --primary-color: #E9E9E9;
+    --secondary-color: #9D969B;
+    --base-color: #9D4EDD;
+    --dark-base-color: #7B2CBF;
+
+    --background-dark: #000000;
+    --background-light: #19161B;
+
+    /* Fonts */
+    --font-light: 'Ubuntu Light', sans-serif;
+    --font-regular: 'Ubuntu Regular', sans-serif;
+    --font-bold: 'Ubuntu Bold', sans-serif;
+
+    /* Font Sizes */
+    --font-size-base: 18px;
+    --font-size-small: 12px;
+
+    --font-size-h1: 36px;
+    --font-size-h2: 30px;
+    --font-size-h3: 20px;
+}
