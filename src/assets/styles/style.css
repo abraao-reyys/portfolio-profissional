@@ -56,13 +56,24 @@
 */
 
 body {
-    padding: 30px 30px;
+    height: 100vh;
+
+    background-color: var(--background-dark);
+}
+
+body p {
+    color: var(--primary-color);
 }
 
 body > header {
     display: flex;
     flex-direction: row nowrap;
     justify-content: space-between;
+    padding: 30px;
+
+    background-image: url(../images/background-p.jpg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
 }
 
 header div#col-menu {
@@ -70,52 +81,78 @@ header div#col-menu {
     justify-self: center;
 }
 
-header h1 {
-    margin-bottom: 20px;
+header div#menu-button span {
+    color: var(--primary-color);
+    font-size: 36px;
+}
 
+div h1 {
+    margin-bottom: 28px;
+
+    color: var(--primary-color);
     text-align: center;
     font-size: var(--font-size-h1);
     font-family: var(--font-bold);
 }
 
-header h1 span {
+div h1 span {
     color: var(--base-color);
     text-decoration: underline;
 }
 
-header h2 {
+div h2 {
+    color: var(--primary-color);
     font-size: var(--font-size-h2);
     font-family: var(--font-bold);
 }
 
-header h2 span {
+div h2 span {
     color: var(--base-color);
 }
 
-header p {
+div p {
     font-size: var(--font-size-base);
     font-family: var(--font-light);
 }
 
-section#intro {
-    padding-top: 194px;
+section {
+    height: 700px;
+    padding: 30px;
 }
 
-header.title-container > div {
+section#intro {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    align-items: center;
+
+    padding-top: 164px;
+    
+    text-align: center;
+
+    background-image: url(../images/background-p-invert.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right bottom;
+}
+
+div.title-container > div {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     justify-content: center;
+
+    margin-bottom: 28px;
 }
 
-header.title-container > div > p {
-    width: 80%;
+div.title-container > div > p {
+    width: 85%;
     padding: 0px 20px;
     
     text-align: center;
 }
 
-header div.sidebar {
+div div.sidebar {
     height: 57px;
     width: 2px;
 
@@ -125,10 +162,7 @@ header div.sidebar {
 div#useful-buttons {
     display: flex;
     flex-flow: row;
-    justify-content: space-evenly;
-
-    width: 80%;
-    margin-top: 20px;
+    justify-content: center;
 
     font-size: var(--font-size-base);
     font-family: var(--font-regular);
@@ -141,6 +175,7 @@ div#useful-buttons div {
 
     height: 40px;
     width: 130px;
+    margin: 0px 20px;
 
     border-radius: 22px;
 }
@@ -154,4 +189,33 @@ div#useful-buttons div:nth-of-type(2) {
     color: var(--primary-color);
 
     background-color: var(--base-color);
+}
+
+div#network-buttons {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+div#network-buttons div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 52px;
+    width: 52px;
+
+    border: 1px solid var(--base-color);
+    border-radius: 30px;
+}
+
+div#network-buttons div {
+    fill: var(--primary-color);
+}
+
+section#intro > p {
+    align-self: end;
+    justify-self: end;
+
+    font-family: var(--font-light);
 }
