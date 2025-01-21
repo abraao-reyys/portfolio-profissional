@@ -301,3 +301,59 @@ section#about img {
     border-radius: 50%;
     border: 1px solid var(--base-color);
 }
+
+section#skills {
+    height: 550px;
+}
+
+section#skills header {
+    margin-bottom: 20px;
+}
+
+section#skills article {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px;
+    column-gap: 12px;
+
+    height: 450px;
+}
+
+section#skills article img {
+    max-width: 48px;
+}
+
+section#skills .card-skill {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: left;
+}
+
+section#skills .logo-skill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 60px;
+    width: 60px;
+    padding: 5px;
+
+    border: 1px solid var(--base-color);
+    border-radius: 10px;
+}
+
+section#skills .text-skill {
+    width: 70px;
+    padding-left: 10px;
+}
+
+section#skills .text-skill h3 {
+    font-size: var(--font-size-h3);
+    font-family: var(--font-bold);
+}
+
+section#skills .text-skill p {
+    font-size: small;
+    font-family: var(--font-light);
+}
