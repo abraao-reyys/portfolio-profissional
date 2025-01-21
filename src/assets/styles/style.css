@@ -57,6 +57,8 @@
 
 body {
     height: 100vh;
+
+    background-color: var(--background-dark);
 }
 
 body h1, h2, h3, p {
