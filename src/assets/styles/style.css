@@ -57,11 +57,9 @@
 
 body {
     height: 100vh;
-
-    background-color: var(--background-dark);
 }
 
-body p {
+body h1, h2, h3, p {
     color: var(--primary-color);
 }
 
@@ -127,6 +125,12 @@ div p {
 section {
     height: 450px;
     padding: 20px;
+
+    background-color: var(--background-dark);
+}
+
+section:nth-of-type(2n) {
+    background-color: var(--background-light);
 }
 
 section#intro {
@@ -145,7 +149,17 @@ section#intro {
     background-position: right bottom;
 }
 
-div.title-container > div {
+.title-container {
+    text-align: center;
+}
+
+.title-container h2 {
+    text-align: center;
+    font-size: var(--font-size-h2);
+    font-family: var(--font-bold);
+}
+
+.title-container > div {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -154,18 +168,27 @@ div.title-container > div {
     margin-bottom: 28px;
 }
 
-div.title-container > div > p {
-    width: 80%;
-    padding: 0px 20px;
-    
+.title-container > div > p { 
+    flex: auto;
+    flex-grow: 0;
+
+    padding: 0px 10px;
+
     text-align: center;
     font-size: var(--font-size-base);
     font-family: var(--font-light);
 }
 
-div div.sidebar {
+div div.vsidebar {
     height: 57px;
     width: 2px;
+
+    background-color: var(--base-color);
+}
+
+div div.hsidebar {
+    height: 2px;
+    width: 28px;
 
     background-color: var(--base-color);
 }
