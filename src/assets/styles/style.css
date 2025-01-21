@@ -71,7 +71,7 @@ body > header {
     justify-content: space-between;
 
     width: 100%;
-    padding: 25px;
+    padding: 20px;
 
     background-image: url(../images/background-p.jpg);
     background-repeat: no-repeat;
@@ -122,8 +122,8 @@ div p {
 }
 
 section {
-    height: 650px;
-    padding: 25px;
+    height: 550px;
+    padding: 20px;
 }
 
 section#intro {
