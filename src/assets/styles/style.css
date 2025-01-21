@@ -80,16 +80,12 @@ body > header {
     position: fixed;
 }
 
-header div#header-text {
-    flex-grow: 1;
-}
-
 header div#col-menu {
     display: flex;
     align-items: center;
     justify-content: center;
 
-    flex-grow: 2;
+    padding-right: 50px;
 
     text-align: right;
 }
