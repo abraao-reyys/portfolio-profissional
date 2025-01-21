@@ -218,6 +218,9 @@ div#useful-buttons div {
     border-radius: 22px;
 
     cursor: pointer;
+}
+
+div#useful-buttons div p {
     user-select: none;
 }
 
