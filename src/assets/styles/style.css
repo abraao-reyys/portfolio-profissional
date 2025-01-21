@@ -218,6 +218,7 @@ div#useful-buttons div {
     border-radius: 22px;
 
     cursor: pointer;
+    user-select: none;
 }
 
 div#useful-buttons div:nth-of-type(1) {
