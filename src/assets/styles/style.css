@@ -294,6 +294,10 @@ section#about article p {
     text-indent: 20px;
 }
 
+section#about article p:nth-of-type(3) {
+    font-size: var(--font-size-small);
+}
+
 section#about span {
     color: var(--base-color);
 }
