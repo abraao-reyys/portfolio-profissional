@@ -22,7 +22,7 @@
     --base-color: #9D4EDD;
     --dark-base-color: #7B2CBF;
 
-    --background-dark: #000000;
+    --background-dark: #070307;
     --background-light: #19161B;
 
     /* Fonts */
@@ -125,9 +125,13 @@ div p {
 }
 
 section {
-    padding: 20px;
+    padding: 70px 20px;
 
     background-color: var(--background-dark);
+}
+
+section:nth-of-type(1) {
+    padding: 20px;
 }
 
 section:nth-of-type(2n) {
@@ -268,7 +272,7 @@ section#intro > p {
 section#about {
     display: grid;
     grid-template-rows: min-content;
-    gap: 20px;
+    gap: 40px;
 
     height: 550px;
 }
@@ -297,6 +301,7 @@ section#about figure {
 
 section#about img {
     max-width: 190px;
+    margin-bottom: 20px;
 
     border-radius: 50%;
     border: 1px solid var(--base-color);
@@ -307,7 +312,7 @@ section#skills {
 }
 
 section#skills header {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 section#skills article {
@@ -330,6 +335,10 @@ section#skills .card-skill {
     justify-content: left;
 }
 
+section#skills .card-skill:nth-of-type(2n) {
+    justify-content: right;
+}
+
 section#skills .logo-skill {
     display: flex;
     align-items: center;
@@ -344,8 +353,11 @@ section#skills .logo-skill {
 }
 
 section#skills .text-skill {
-    width: 70px;
     padding-left: 10px;
+}
+
+section#skills .text-skill:nth-of-type(2n) {
+    width: 70px;
 }
 
 section#skills .text-skill h3 {
