@@ -144,6 +144,7 @@ section#intro {
     grid-template-rows: auto auto;
     gap: 20px;
     align-items: center;
+    justify-content: center;
 
     height: 450px;
     padding-top: 164px;
