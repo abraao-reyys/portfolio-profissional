@@ -125,6 +125,7 @@ div p {
 }
 
 section {
+    width: 100vw;
     padding: 70px 20px;
 
     background-color: var(--background-dark);
@@ -356,7 +357,7 @@ section#skills .text-skill {
     padding-left: 10px;
 }
 
-section#skills .text-skill:nth-of-type(2n) {
+section#skills article div:nth-of-type(2n) .text-skill {
     width: 70px;
 }
 
@@ -366,6 +367,6 @@ section#skills .text-skill h3 {
 }
 
 section#skills .text-skill p {
-    font-size: small;
+    font-size: var(--font-size-small);
     font-family: var(--font-light);
 }
