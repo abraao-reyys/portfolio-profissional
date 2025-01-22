@@ -98,6 +98,8 @@ header div#col-menu {
 header div#menu-button span {
     color: var(--primary-color);
     font-size: 36px;
+
+    user-select: none;
 }
 
 div h1 {
