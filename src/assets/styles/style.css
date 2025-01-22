@@ -70,6 +70,10 @@ body h1, h2, h3, p {
     color: var(--primary-color);
 }
 
+body h1, h2, h3 {
+    font-family: var(--font-bold);
+}
+
 body > header {
     display: flex;
     flex-direction: row nowrap;
@@ -275,6 +279,8 @@ section#intro > p {
 
     font-size: var(--font-size-small);
     font-family: var(--font-light);
+
+    user-select: none;
 }
 
 section#about {
@@ -380,4 +386,74 @@ section#skills .text-skill h3 {
 section#skills .text-skill p {
     font-size: var(--font-size-small);
     font-family: var(--font-light);
+}
+
+section#projects {
+    height: 550px;
+}
+
+section#projects header {
+    margin-bottom: 70px;
+}
+
+section#projects article > div:nth-of-type(1) {
+    border: 1px solid var(--base-color);
+}
+
+section#projects p {
+    padding: 4px 0px;
+
+    text-align: justify;
+    font-size: var(--font-size-base);
+    font-family: var(--font-light);
+}
+
+section#projects p:nth-of-type(2) {
+    color: var(--base-color);
+    font-family: var(--font-regular);
+}
+
+section #project-box {
+    display: flex;
+
+    padding: 20px;
+
+    border: 1px solid var(--base-color);
+    border-radius: 20px;
+}
+
+section .project-info {
+    width: 95%;
+    margin: auto;
+
+    position: relative;
+}
+
+section#projects div.img-box {
+    height: 48vw;
+    width: 100%;
+    margin-top: -50px;
+    margin-bottom: 12px;
+
+    border-radius: 20px;
+
+    background-image: url(../images/project-portfolio.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    
+}
+
+section#projects .project-links {
+    display: flex;
+    justify-content: right;
+}
+
+section#projects .project-links div {
+    padding-left: 10px;
+}
+
+section#projects .project-links img {
+    max-width: 38px;
 }
