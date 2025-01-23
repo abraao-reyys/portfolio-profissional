@@ -290,6 +290,8 @@ section#about {
     gap: 40px;
 
     height: 550px;
+
+    scroll-margin-top: 80px;
 }
 
 section#about article {
@@ -328,6 +330,8 @@ section#about img {
 
 section#skills {
     height: 550px;
+
+    scroll-margin-top: 80px;
 }
 
 section#skills header {
@@ -387,6 +391,10 @@ section#skills .text-skill h3 {
 section#skills .text-skill p {
     font-size: var(--font-size-small);
     font-family: var(--font-light);
+}
+
+section#projects {
+    scroll-margin-top: 80px;
 }
 
 section#projects header {
@@ -550,4 +558,43 @@ section#contact form input[type="submit"] {
 
 section#contact form input[type="submit"]:hover {
     background-color: var(--base-color);
+}
+
+footer #footer-links {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+    padding: 50px 20px;
+
+    background-color: var(--background-light);
+}
+
+footer #footer-links h2 {
+    color: var(--base-color);
+}
+
+footer #footer-links a {
+    text-decoration: none;
+}
+
+footer #footer-links a p:hover {
+    color: var(--base-color);
+}
+
+footer #footer-links > div {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 8px;
+}
+
+footer #footer-credits {
+    padding: 20px 40px;
+
+    background-color: var(--background-dark);
+}
+
+footer #footer-credits p {
+    text-align: center;
+    font-size: var(--font-size-small);
 }
