@@ -298,10 +298,10 @@
             <article>
                 <h3>Pronto para <span>começar</span>?</h3>
                 <p>Entre em contato comigo! Terei o imenso prazer de recebê-lo (a) e dar o primeiro passo em direção ao seu próximo grande projeto.</p>
-                <form action="https://formspree.io/f/xwpvkwll" method="post" autocomplete="on" autocapitalize="sentences">
+                <form action="https://formspree.io/f/xwpvkwll" method="post" autocomplete="on">
                     <div>
                         <label for="iname"></label>
-                        <input type="text" name="name" id="iname" placeholder="Nome" required>
+                        <input type="text" name="name" id="iname" placeholder="Nome" required autocapitalize="words">
                     </div>
                     <div>
                         <label for="iemail"></label>
@@ -309,11 +309,11 @@
                     </div>
                     <div>
                         <label for="isubject"></label>
-                        <input type="text" name="subject" id="isubject" placeholder="Assunto" required>
+                        <input type="text" name="subject" id="isubject" placeholder="Assunto" required autocapitalize="sentences">
                     </div>
                     <div>
                         <label for="imessage"></label>
-                        <textarea name="message" id="imessage" placeholder="Mensagem" required></textarea>
+                        <textarea name="message" id="imessage" placeholder="Mensagem" required autocapitalize="sentences"></textarea>
                     </div>
                     <div>
                         <input type="submit" value="Enviar">
