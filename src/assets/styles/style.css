@@ -468,3 +468,86 @@ section#projects .swiper-slide {
 
     border-radius: 10px;
 }
+
+section#contact {
+    height: 500px;
+}
+
+section#contact header {
+    margin-bottom: 40px;
+}
+
+section#contact article {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 8px;
+}
+
+section#contact article p {
+    text-align: justify;
+    font-size: var(--font-size-base);
+    font-family: var(--font-light);
+}
+
+section#contact article h3 {
+    font-size: 1.5em;
+}
+
+section#contact span {
+    color: var(--dark-base-color);
+}
+
+section#contact form {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 8px;
+}
+
+section#contact form div {
+    height: 52px;
+    width: 100%;
+}
+
+section#contact form div:nth-last-of-type(2) {
+    height: 104px;
+}
+
+section#contact form input, textarea {
+    height: 100%;
+    width: 100%;
+
+    color: var(--primary-color);
+    text-indent: 12px;
+    font-size: var(--font-size-base);
+    font-family: var(--font-light);
+
+    background-color: var(--background-light);
+    border-radius: 8px;
+    border: 0;
+}
+
+section#contact textarea {
+    padding: 14px 12px;
+
+    text-indent: 0;
+
+    resize: none;
+    box-sizing: border-box;
+}
+
+section#contact textarea::placeholder {
+    line-height: 16px;
+}
+
+section#contact form input[type="submit"] {
+    color: var(--primary-color);
+    text-indent: 0;
+    font-size: var(--font-size-base);
+    font-family: var(--font-regular);
+
+    background-color: var(--dark-base-color);
+}
+
+section#contact form input[type="submit"]:hover {
+    background-color: var(--base-color);
+}
