@@ -20,15 +20,3 @@ const swiper = new Swiper('.swiper', {
         clickable: true,
     },
     });
-    swiper.on('slideChange', () => {
-        const activeIndex = swiper.realIndex; // Índice do slide central ativo (realIndex ignora o loop)
-        
-        // Opcional: adiciona uma classe "ativo" ao slide central
-        swiper.slides.forEach((slide, index) => {
-            if (index === swiper.activeIndex) {
-                slide.classList.add('ativo');
-            } else {
-                slide.classList.remove('ativo');
-            }
-        });
-    });
