@@ -87,6 +87,7 @@ body > header {
     padding: 20px;
 
     background-image: url(../images/background-p.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: right bottom;
 
@@ -251,6 +252,8 @@ div#useful-buttons div p {
 
 div#useful-buttons a {
     text-decoration: none;
+
+    user-select: none;
 }
 
 div#useful-buttons #cv-button {
@@ -268,6 +271,8 @@ div#network-buttons {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
+
+    user-select: none;
 }
 
 div#network-buttons div {
