@@ -1,3 +1,4 @@
+// Inicializa o Swiper
 const swiper = new Swiper('.swiper', {
     slidesPerView: 3, // Número de slides visíveis ao mesmo tempo
     centeredSlides: true, // Centraliza o slide ativo
@@ -19,7 +20,27 @@ const swiper = new Swiper('.swiper', {
         el: '.swiper-pagination',
         clickable: true,
     },
-    });
+    on: {
+        slideChangeTransitionEnd: () => {
+            // Obtém o índice do slide ativo no Swiper
+            const activeIndex = swiper.realIndex;
+
+            // Seleciona todos os projetos
+            const projectInfos = document.querySelectorAll('.project-info');
+
+            // Mostra apenas o projeto correspondente ao índice ativo
+            projectInfos.forEach((project, index) => {
+                project.style.display = index === activeIndex ? 'block' : 'none';
+            });
+        },
+    },
+});
+
+// Exibe o primeiro projeto por padrão ao carregar a página
+document.querySelectorAll('.project-info').forEach((project, index) => {
+    project.style.display = index === 0 ? 'block' : 'none';
+});
+
 
 const words = ["dinâmicos.", "atrativos.", "planejados.", "criativos."];
 let currentWordIndex = 0;
