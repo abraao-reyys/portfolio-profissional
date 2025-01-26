@@ -1,4 +1,3 @@
-// Inicializa o Swiper
 const swiper = new Swiper('.swiper', {
     slidesPerView: 3, // Número de slides visíveis ao mesmo tempo
     centeredSlides: true, // Centraliza o slide ativo
@@ -42,7 +41,7 @@ document.querySelectorAll('.project-info').forEach((project, index) => {
 });
 
 
-const words = ["dinâmicos.", "atrativos.", "planejados.", "criativos."];
+const words = ["dinâmicos.", "modernos.", "intuitivos.", "responsivos.", "atrativos.", "funcionais.", "agradáveis.", "criativos."];
 let currentWordIndex = 0;
 let currentCharIndex = 0;
 let isDeleting = false; // Define se estamos apagando o texto

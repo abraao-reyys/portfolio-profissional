@@ -78,10 +78,6 @@
     section#skills article img {
         max-width: 60px;
     }
-
-    section#skills article div:nth-of-type(2n) .text-skill {
-        width: 95px;
-    }
     
     section#projects .project-links img {
         max-width: 50px;
