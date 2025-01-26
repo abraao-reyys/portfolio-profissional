@@ -113,9 +113,17 @@
 }
 
 @media screen and (min-width: 1024px) {
-    section#projects .swiper {
-        height: 150px;
+    :root {
+        --font-size-h1: 48px;
     }
+
+    header div#menu-button span:hover {
+        font-size: 55px;
+    
+        transition: font-size 0.2s;
+    }
+
+    
 
     div h1 {
         margin-bottom: 90px;
@@ -126,6 +134,16 @@
     }
 
     section#intro {
-        padding-top: 270px;
+        padding-top: 250px;
+
+        gap: 40px;
+    }
+    
+    section#about article p {
+        max-width: 650px;
+    }
+
+    section#projects .swiper {
+        height: 150px;
     }
 }
