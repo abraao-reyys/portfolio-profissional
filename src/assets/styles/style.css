@@ -184,8 +184,7 @@ div h1 {
 div h1 span {
     color: var(--base-color);
     font-size: 1.1em;
-    text-decoration: underline;
-    background: linear-gradient(45deg, #b898d1, #905cbb ,#7e36bd);
+    background: linear-gradient(45deg, #7e44aa, #551f81 ,#28004b);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -197,7 +196,7 @@ div h2 {
 }
 
 div h2 span {
-    background: linear-gradient(45deg, #b898d1, #905cbb ,#7e36bd);
+    background: linear-gradient(45deg, #7e44aa, #551f81 ,#28004b);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
