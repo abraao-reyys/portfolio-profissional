@@ -95,13 +95,15 @@ main.addEventListener('click', closeMenu);
 listItem.addEventListener('click', closeMenu);
 
 function openMenu() {
-    sideMenu.style.display = 'grid';
+    sideMenu.style.width = '60vw';
+    sideMenu.style.padding = '20px';
     body.style.overflow = 'hidden';
     screen_darken.style.display = 'block';
 }
 
 function closeMenu() {
-    sideMenu.style.display = 'none';
+    sideMenu.style.width = '0vw';
+    sideMenu.style.padding = '0px';
     body.style.overflow = 'scroll';
     screen_darken.style.display = 'none';
 }
