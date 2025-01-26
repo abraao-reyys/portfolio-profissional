@@ -133,6 +133,12 @@ header div#menu-button span {
     cursor: pointer;
 }
 
+header div#menu-button span:hover {
+    font-size: 38px;
+
+    transition: font-size 0.2s;
+}
+
 header #side-menu {
     display: grid;
 
@@ -241,7 +247,7 @@ section#intro {
     align-items: center;
     justify-content: center;
 
-    height: 450px;
+    height: 580px;
     padding-top: 164px;
     
     text-align: center;
@@ -336,10 +342,20 @@ div#useful-buttons #cv-button {
     box-sizing: border-box;
 }
 
+div#useful-buttons #cv-button:hover {
+    background-color: var(--base-color);
+
+    transition: background-color 0.6s;
+}
+
 div#useful-buttons #contact-button {
     color: var(--primary-color);
 
     background-image: linear-gradient(45deg, #865da7, #9D4EDD ,#370068);
+}
+
+div#useful-buttons #contact-button:hover {
+    background-image: linear-gradient(45deg, #a98fbe, #b077df ,#7029ad);
 }
 
 div#network-buttons {
@@ -359,7 +375,13 @@ div#network-buttons div {
     width: 52px;
 
     border: 1px solid var(--base-color);
-    border-radius: 30px;
+    border-radius: 50%;
+}
+
+div#network-buttons div:hover {
+    border: 1px solid var(--primary-color);
+    
+    transition: border 0.6s;
 }
 
 div#network-buttons div {
@@ -421,8 +443,6 @@ section#about img {
 }
 
 section#skills {
-    height: 550px;
-
     scroll-margin-top: 80px;
 }
 
@@ -436,7 +456,6 @@ section#skills article {
     gap: 48px;
     column-gap: 12px;
 
-    height: 450px;
     min-width: 320px;
     max-width: 420px;
     margin: auto;
@@ -531,6 +550,10 @@ section .project-info {
     position: relative;
 }
 
+section .project-info h3 {
+    font-size: var(--font-size-h3);
+}
+
 section#projects div.img-box {
     display: flex;
     justify-content: center;
@@ -582,8 +605,6 @@ section#projects .swiper-slide {
 section#contact {
     display: grid;
     justify-content: center;
-    
-    height: 500px;
 
     scroll-margin-top: 80px;
 }
@@ -665,6 +686,8 @@ section#contact form input[type="submit"] {
     font-family: var(--font-regular);
 
     background-color: var(--dark-base-color);
+
+    cursor: pointer;
 }
 
 section#contact form input[type="submit"]:hover {

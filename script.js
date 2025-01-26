@@ -87,7 +87,7 @@ const screen_darken = window.document.querySelector('div.screen-darken');
 const sideMenu = window.document.getElementById('side-menu');
 const close_button = window.document.querySelector('#side-menu img');
 const menu_button = window.document.getElementById('menu-button');
-const listItem = window.document.querySelector('#side-menu ul')
+const listItem = window.document.querySelector('#side-menu ul');
 
 menu_button.addEventListener('click', openMenu);
 close_button.addEventListener('click', closeMenu);
@@ -95,7 +95,12 @@ main.addEventListener('click', closeMenu);
 listItem.addEventListener('click', closeMenu);
 
 function openMenu() {
-    sideMenu.style.width = '60vw';
+    const screenWidth = window.innerWidth;
+    if (screenWidth > 480) {
+        sideMenu.style.width = '40vw'; 
+    } else {
+       sideMenu.style.width = '60vw'; 
+    }
     sideMenu.style.padding = '20px';
     body.style.overflow = 'hidden';
     screen_darken.style.display = 'block';

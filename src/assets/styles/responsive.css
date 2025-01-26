@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 769px) {
+    :root {
+        --font-size-base: 18px;
+        --font-size-small: 14px;
+    
+        --font-size-h1: 38px;
+        --font-size-h2: 32px;
+        --font-size-h3: 24px;
+    }
+
+    div h1 {
+        margin-bottom: 40px;
+    }
+
+    header div#col-menu {
+        padding-right: 50px;
+    }
+
+    header #side-menu img {
+        width: 50px;
+    }
+
+    div.title-container:nth-of-type(1) > div {
+        margin-bottom: 40px;
+    }
+
+    div.title-container:nth-of-type(1) > div > p {
+        width: 70%;
+    }
+
+    header div#menu-button span {
+        font-size: 50px;
+    }
+
+    section {
+        padding: 100px 40px;
+    }
+
+    section#intro {
+        padding: 100px 40px;
+    }
+
+
+    div#useful-buttons div {
+        height: 52px;
+        width: 166px;
+        margin: 0px 30px;
+    }
+
+    div#network-buttons div {
+        height: 66px;
+        width: 66px;
+    }
+
+    section#intro {
+        padding-top: 210px;
+    }
+
+    section#about img {
+        max-width: 244px;
+    }
+
+    section#about article p {
+        max-width: 580px;
+    }
+
+    section#skills .logo-skill {
+        height: 76px;
+        width: 76px;
+    }
+
+    section#skills article {
+        max-width: 500px;
+    }
+
+    section#skills article img {
+        max-width: 60px;
+    }
+    
+    section#projects .project-links img {
+        max-width: 50px;
+    }
+
+    section#projects .swiper {
+        height: 15vw;
+    }
+
+    section#contact article {
+        max-width: 580px;
+    }
+
+    section#contact form {
+        gap: 10px;
+    }
+
+    section#contact form div {
+        height: 68px;
+    }
+
+    section#contact form div:nth-last-of-type(2) {
+        height: 136px;
+    }
+
+    footer #footer-links {
+        padding: 70px 30px;
+    }
+
+    footer #footer-credits {
+        padding: 30px 60px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    section#projects .swiper {
+        height: 150px;
+    }
+
+    div h1 {
+        margin-bottom: 90px;
+    }
+
+    div.title-container:nth-of-type(1) > div {
+        margin-bottom: 90px;
+    }
+
+    section#intro {
+        padding-top: 270px;
+    }
+}
