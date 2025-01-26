@@ -59,3 +59,28 @@ setTimeout(type, typingSpeed);
 
 // Inicia a animação de digitação
 type();
+
+const body = window.document.querySelector('body');
+const main = window.document.querySelector('main');
+const screen_darken = window.document.querySelector('div.screen-darken');
+const sideMenu = window.document.getElementById('side-menu');
+const close_button = window.document.querySelector('#side-menu img');
+const menu_button = window.document.getElementById('menu-button');
+const listItem = window.document.querySelector('#side-menu ul')
+
+menu_button.addEventListener('click', openMenu);
+close_button.addEventListener('click', closeMenu);
+main.addEventListener('click', closeMenu);
+listItem.addEventListener('click', closeMenu);
+
+function openMenu() {
+    sideMenu.style.display = 'grid';
+    body.style.overflow = 'hidden';
+    screen_darken.style.display = 'block';
+}
+
+function closeMenu() {
+    sideMenu.style.display = 'none';
+    body.style.overflow = 'scroll';
+    screen_darken.style.display = 'none';
+}
