@@ -80,7 +80,6 @@ body h1, h2, h3 {
 
 body > header {
     display: flex;
-    flex-direction: row nowrap;
     justify-content: space-between;
 
     width: 100%;
