@@ -326,7 +326,7 @@ div#useful-buttons #cv-button {
 div#useful-buttons #contact-button {
     color: var(--primary-color);
 
-    background-image: linear-gradient(45deg, #be9ada, #7b3ead ,#28004b);
+    background-image: linear-gradient(45deg, #7e44aa, #551f81 ,#28004b);
 }
 
 div#network-buttons {
