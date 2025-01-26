@@ -147,7 +147,7 @@ header #side-menu {
     top: 0;
     right: 0;
 
-    transition: width 0.6s;
+    transition: width 0.6s, padding 0.7s;
 }
 
 header #side-menu img {
@@ -613,7 +613,7 @@ section#contact article h3 {
 }
 
 section#contact span {
-    background: linear-gradient(45deg, #7e44aa, #9D4EDD ,#7B2CBF);
+    background: linear-gradient(45deg, #865da7, #9D4EDD ,#370068);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
