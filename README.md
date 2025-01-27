@@ -21,13 +21,17 @@ Criei o portfólio pouco depois de iniciar meus estudos em JavaScript com a inte
 * JavaScript
 * SwiperJS
 
+## Deploy
+
+[Clique aqui](https://abraao-reyys.github.io/portfolio-profissional/) para acessar.
+
 ## Issues
 
 Sinta-se à vontade para registrar um novo problema no Portfólio Profissional. Se você já encontrou uma solução, adoraria revisar sua solicitação de pull!
 
 ## Agradecimentos
 
-Agradeço ao meu amigo **[Nícolas Santos](https://www.linkedin.com/in/nícolas-santos-b1a534290/)**, UX/UI Designer, que ajudou-me em vários momentos na construção desse projeto. Aprendi e constinuo aprendendo muito com ele.
+Agradeço ao meu amigo **[Nícolas Santos](https://www.linkedin.com/in/nícolas-santos-b1a534290/)**, UX/UI Designer, que ajudou-me em vários momentos na construção desse projeto. Aprendi e continuo aprendendo muito com ele.
 
 ## Contato
 
